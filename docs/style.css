@@ -1,0 +1,31 @@
+:root{
+  --bg:#071029;--panel:#0f1724;--muted:#9aa4b2;--accent:#ffd85c;
+  --glass: rgba(255,255,255,0.03);
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#071029,#041225);color:#eef6ff;display:flex;justify-content:center;padding:28px}
+.container{width:1100px;max-width:96%;display:grid;grid-template-columns:340px 1fr;gap:20px}
+.panel{background:var(--panel);border-radius:12px;padding:16px;box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+.header{display:flex;align-items:center;gap:12px}
+.logo{width:56px;height:56px;border-radius:10px;background:var(--glass);display:flex;align-items:center;justify-content:center;font-weight:800}
+.title{font-size:18px;font-weight:800}
+.subtitle{font-size:12px;color:var(--muted)}
+.balance{margin-top:12px;padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.01),rgba(255,255,255,0.02));display:flex;justify-content:space-between;align-items:center}
+.small{font-size:12px;color:var(--muted)}
+.controls{display:flex;align-items:center;gap:8px}
+.btn{padding:8px 12px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04);cursor:pointer;color:inherit}
+.btn.primary{background:var(--accent);color:#07202a;border:none}
+.machine{display:flex;flex-direction:column;align-items:center;gap:12px;padding:12px}
+.screen{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:14px;border-radius:10px;width:100%;max-width:700px}
+.reels{display:flex;gap:8px;justify-content:center;align-items:center}
+.reel{width:120px;height:120px;border-radius:10px;background:rgba(255,255,255,0.02);display:flex;align-items:center;justify-content:center;border:2px solid rgba(255,255,255,0.03);overflow:hidden}
+.symbol{width:96px;height:96px;display:flex;align-items:center;justify-content:center}
+.controls-bottom{display:flex;align-items:center;gap:12px;width:100%;max-width:700px;justify-content:space-between;margin-top:8px}
+.spin{font-weight:900;padding:12px 18px;border-radius:12px;background:linear-gradient(90deg,var(--accent),#ffd85c);border:none;cursor:pointer}
+.log{font-size:13px;color:var(--muted);min-height:36px;margin-top:6px}
+.theme-switch{display:flex;gap:8px}
+.theme-card{padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);cursor:pointer}
+.admin{margin-top:12px;padding:10px;border-radius:8px;background:rgba(255,255,255,0.02)}
+.footer{font-size:12px;color:var(--muted);margin-top:10px;text-align:center}
+@media(max-width:900px){.container{grid-template-columns:1fr} .reel{width:80px;height:80px} .symbol{width:64px;height:64px} .spin{padding:10px 14px}}
